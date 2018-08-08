@@ -1,20 +1,22 @@
 import compose from "koa-compose";
 import controller, {get} from "inra-server-http/dest/router";
-import NoResultsFoundError from "../errors/NoResultsFoundError";
-import NotAllowedError from "../errors/NotAllowedError";
+import CustomError from "../errors/CustomError";
 
-@controller("/test")
+@controller("/")
 export default class TestRouter {
   
   constructor(dependencies) {
     this.database = dependencies.database;
   }
 
-  @get('/hello/:id')
+  @get('')
   async hello(ctx) {
-    ctx.body =  {
-      success: true
-    }
+    ctx.body = "Hello World"
+  }
+
+  @get('/error')
+  async error(ctx) {
+    throw new CustomError('Custom')
   }
 
 

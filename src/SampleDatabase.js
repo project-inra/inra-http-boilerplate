@@ -94,7 +94,7 @@ export function initDatabase(dependencies, dbConfig) {
   const db = new Database(dbConfig);
   try {
     load(resolve(__dirname, "api/models"), (src) => {
-      db.load(require(src).default(db.mongoose)); // Change to your DB Driver
+      db.load(require(src)(db.mongoose)); // Change to your DB Driver
     });
   } catch (error) {
     dependencies.logger.error(error);

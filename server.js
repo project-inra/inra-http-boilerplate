@@ -3,4 +3,4 @@
 require("babel-register");
 const config = require('config');
 // Run the server:
-require("./src/App").default(config.get("server"),config.get("database"));
+require("./src/App")(config.get("server"),config.get("database"));
