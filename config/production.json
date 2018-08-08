@@ -1,0 +1,17 @@
+{
+  "server": {
+    "host": "http://localhost",
+    "port": 8000
+  },
+  "database": {
+    "host": "localhost",
+    "port": "27017",
+    "database": "crimern",
+    "username": "root",
+    "password": " "
+  },
+  "auth": {
+    "secret": "secret",
+    "maxAge": 12000
+  }
+}
