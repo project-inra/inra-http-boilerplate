@@ -1,8 +1,4 @@
-Inra-http-boilerplate compatible with v.1.4.0
-
-
 # inra-http-boilerplate
-
 
 ## Version
 
