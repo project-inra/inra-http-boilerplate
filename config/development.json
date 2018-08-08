@@ -9,9 +9,5 @@
     "database": "sample",
     "username": "root",
     "password": " "
-  },
-  "auth": {
-    "secret": "secret",
-    "maxAge": 12000
   }
 }

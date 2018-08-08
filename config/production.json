@@ -6,12 +6,8 @@
   "database": {
     "host": "localhost",
     "port": "27017",
-    "database": "crimern",
+    "database": "sample",
     "username": "root",
     "password": " "
-  },
-  "auth": {
-    "secret": "secret",
-    "maxAge": 12000
   }
 }
